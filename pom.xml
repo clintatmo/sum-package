@@ -7,6 +7,7 @@
     <groupId>com.catmosoerodjo</groupId>
     <artifactId>sum-package</artifactId>
     <version>1.0</version>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -20,5 +21,13 @@
             <version>3.9</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub clintatmo Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/clintatmo/sum-package</url>
+        </repository>
+    </distributionManagement>
 
 </project>
